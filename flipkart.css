@@ -1,0 +1,625 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(221, 221, 221);
+    
+}
+body::-webkit-scrollbar{       /*hides the scrollbar*/
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.icon{
+    font-size: 20px;
+}
+header{
+    background-color: #fff;
+    position: fixed;
+    width: 100vw;
+}
+.logo{
+    margin-top: 2vh;
+}
+.navbar{
+    height: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0vh 3vw 10vh 3vw;
+}
+.search{
+    display: flex;
+    line-height: 2.5vw;
+}
+.search-icon{
+    font-size: 3vh;
+    height: 5vh;
+    width: 2.5vw;
+    background-color:rgb(240, 240, 240);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    text-align: center;
+    margin-top: 2vh;
+}
+.search-input{
+    width: 45vw;
+    background-color:rgb(240, 240, 240);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+    border: none;
+    font-size: 20px;
+    height: 36.8px;
+    margin-top: 2vh;
+}
+.login:hover{
+    background-color: #2a55e5;
+    cursor: pointer;
+}
+.login{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    border-radius: 5px;
+    height: 5vh;
+    width: 6vw;
+    align-items: center;
+    margin-top: 2vh;
+}
+.cart:hover{
+    cursor: pointer;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    height: 5vh;
+    width: 6vw;
+    margin-top: 2vh;
+}
+.seller:hover{
+    cursor: pointer;
+}
+.seller{
+    display: flex;
+    text-wrap: nowrap;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    height: 5vh;
+    width: 6vw;
+    margin-top: 2vh;
+}
+.gap-div1{
+    height: 80px;
+    background-color: rgb(221, 221, 221);
+}
+.small-boxes{
+    height: 130px;
+    background-color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.s1{
+    height: 70px;
+    width:  70px;
+    background-image: url("s1.jpg");
+    background-size: cover;
+}
+.s2{
+    height: 70px;
+    width:  70px;
+    background-image: url("s2.jpeg");
+    background-size: cover;
+}
+.s3{
+    height: 70px;
+    width:  70px;
+    background-image: url("fashion.webp");
+    background-size: cover;            
+}
+.s4{
+    height: 70px;
+    width:  70px;
+    background-image: url("s4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.s5{
+    height: 70px;
+    width:  70px;
+    background-image: url("s5.jpg");
+    background-size: cover;
+}
+.s6{
+    height: 70px;
+    width:  70px;
+    background-image: url("appliances.webp");
+    background-size: cover;
+}
+.s7{
+    height: 70px;
+    width:  70px;
+    background-image: url("airplane.webp");
+    background-size: contain;           
+}
+.s8{
+    height: 70px;
+    width:  70px;
+    background-image: url("s8.jpg");
+    background-size: cover;
+}
+.s9{
+    height: 70px;
+    width:  70px;
+    background-image: url("bike.webp");
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+.s1 p {
+    margin-top: 70px;
+    font-size: 14px;
+    margin-left: 5px;
+    
+}
+.s2 p {
+    margin-top: 70px;
+    font-size: 14px;
+    margin-left: 8px;
+}
+.s3 p {
+    margin-top: 70px;
+    font-size: 14px;
+    margin-left: 18px;
+}
+.s4 p {
+    margin-top: 70px;
+    font-size: 14px;
+}
+.s5 p {
+    margin-top: 70px;
+    font-size: 14px;
+    white-space: nowrap;    /*keeps the text in a single line*/
+    margin-left: -20px;
+}
+.s6 p {
+    margin-top: 70px;
+    font-size: 14px;
+}
+.s7 p {
+    margin-top: 70px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.s8 p {
+    margin-top: 70px;
+    font-size: 14px;
+    white-space: nowrap;    /*keeps the text in a single line*/
+    margin-left: -30px;
+}
+.s9 p {
+    margin-top: 70px;
+    font-size: 14px;
+    white-space: nowrap;    /*keeps the text in a single line*/
+    margin-left: -5px;
+}
+.gap-div2{
+    height: 15px;
+    background-color: rgb(221, 221, 221);
+}
+.big-photo{
+    height: 34vh;
+    background-image: url("bigMainImage.webp");
+    background-size: cover;
+    width: calc(100vw - 40px);   /* chat gtp*/
+    margin-left: 20px;           /*chat gtp*/
+    margin-right: 20px;          /*chat gtp*/ /*This line doesn't change anything in the layout idk why*/
+}
+.gap-div3{
+    height: 15px;
+    background-color: rgb(221, 221, 221);
+}
+.item-ad{
+    display: flex;
+    gap: 10px;
+}
+.items{
+    height: 48vh;
+    width: 80.7vw;
+    background-color: #fff;
+    margin-left: 20px;
+    display: flex;
+    gap: 15px;
+}
+.items p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: absolute;
+}
+.ad{
+    height: 50vh;
+    width: 16vw;
+    background-image: url("ad.webp");
+    background-size: contain;
+}
+.item1:hover{
+    cursor: pointer;
+    background-size: 175px 205px;
+}
+.item2:hover{
+    cursor: pointer;
+    background-size: 195px;
+}
+.item3:hover{
+    cursor: pointer;
+    background-size: 205px;
+}
+.item4:hover{
+    cursor: pointer;
+    background-size: 102%;
+}
+.item5:hover{
+    cursor: pointer;
+    background-size: 205px;
+}
+.item6:hover{
+    cursor: pointer;
+    background-size: 205px;
+}
+.item1{
+    margin-top: 70px;
+    margin-left: 10px;
+    height: 260px;
+    width: 225px;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img1\(Noise\ smartwatches\).jpg");
+    background-size: 170px 200px;
+    background-repeat: no-repeat;
+}
+.item2{
+    margin-top: 70px;
+    height: 260px;
+    width: 225px;
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img2.jpeg");
+    background-size: 190px;
+    background-repeat: no-repeat;
+}
+.item3{
+    margin-top: 70px;
+    height: 260px;
+    width: 225px;
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img3.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.item4{
+    margin-top: 70px;
+    height: 260px;
+    width: 225px;
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img4.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.item5{
+    margin-top: 70px;
+    height: 260px;
+    width: 225px;
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img\ 5.webp");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.item6{
+    margin-top: 70px;
+    margin-right: 10px;
+    height: 260px;
+    width: 225px;
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img6.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.item1 p{
+    margin-top: 220px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.item2 p{
+    margin-top: 220px;
+    margin-left: 70px;
+    font-size: 16px;
+}
+.item3 p{
+    margin-top: 220px;
+    margin-left: 35px;
+    font-size: 16px;
+}
+.item4 p{
+    margin-top: 220px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.item5 p{
+    margin-top: 220px;
+    margin-left: 25px;
+    font-size: 16px;
+}
+.item6 p{
+    margin-top: 220px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.item1 b{
+    margin-left: 25px;
+}
+.item2 b{
+    margin-left: -15px;
+}
+.item3 b{
+    margin-left: 25px;
+}
+.item4 b{
+    margin-left: 25px;
+}
+.item5 b{
+    margin-left: 25px;
+}
+.item6 b{
+    margin-left: 55px;
+}
+.gap-div4{
+    height: 5px;
+    background-color:rgb(221, 221, 221);
+}
+.items2{
+    height: 48vh;
+    background-color: #fff;
+    width: calc(100vw - 40px);   /* chat gtp*/
+    margin-left: 20px;           /*chat gtp*/
+    margin-right: 20px;          /*chat gtp*/ /*This line doesn't change anything in the layout idk why*/
+    display: flex;
+    gap: 15px;
+}
+.items2 p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: absolute;
+    
+}
+.item7:hover{
+    cursor: pointer;
+    background-size: 215px;
+}
+.item8:hover{
+    cursor: pointer;
+    background-size: 205px;
+}
+.item9:hover{
+    cursor: pointer;
+    background-size: 205px;
+}
+.item10:hover{
+    cursor: pointer;
+    background-size: 205px;
+}
+.item11:hover{
+    cursor: pointer;
+    background-size: 205px;
+}
+.item12:hover{
+    cursor: pointer;
+    background-size: 205px;
+}
+.item13:hover{
+    cursor: pointer;
+    background-size: 205px;
+}
+.item7{
+    margin-top: 70px;
+    margin-left: 10px;
+    height: 260px;
+    width: 225px;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img7.png");
+    background-size: 210px;
+    background-repeat: no-repeat;
+}
+.item8{
+    margin-top: 70px;
+    height: 260px;
+    width: 225px;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img8.webp");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.item9{
+    margin-top: 70px;
+    height: 260px;
+    width: 225px;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img9.webp");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+.item10{
+    margin-top: 70px;
+    height: 260px;
+    width: 225px;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img10.webp");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.item11{
+    margin-top: 70px;
+    height: 260px;
+    width: 225px;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img11.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.item12{
+    margin-top: 70px;
+    height: 260px;
+    width: 225px;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img12.avif");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.item13{
+    margin-top: 70px;
+    margin-right: 10px;
+    height: 260px;
+    width: 225px;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    background-image: url("img13.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+.item7 p{
+    margin-top: 220px;
+    margin-left: 5px;
+    font-size: 16px;
+}
+.item8 p{
+    margin-top: 220px;
+    margin-left: 30px;
+    font-size: 16px;
+}
+.item9 p{
+    margin-top: 220px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.item10 p{
+    margin-top: 220px;
+    margin-left: 1px;
+    font-size: 16px;
+}
+.item11 p{
+    margin-top: 220px;
+    margin-left: 5px;
+    font-size: 16px;
+}
+.item12 p{
+    margin-top: 220px;
+    margin-left: 3px;
+    font-size: 16px;
+}
+.item13 p{
+    margin-top: 220px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.item7 b{
+    margin-left: 35px;
+}
+.item8 b{
+    margin-left: 25px;
+}
+.item9 b{
+    margin-left: 25px;
+}
+.item10 b{
+    margin-left: 65px;
+}
+.item11 b{
+    margin-left: 70px;
+}
+.item12 b{
+    margin-left: 75px;
+}
+.item13 b{
+    margin-left: 25px;
+}
+.gap-div5{
+    height: 6vh;
+    background-color:  rgb(221, 221, 221);
+}
+.brand-directories1{
+    height: 2980px;
+    background-color: rgb(212, 212, 212);
+}
+.brand-directories1 h4{
+    padding-top: 70px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 19px;
+    color: rgb(78, 76, 76);
+    
+}
+.brand-directories1 p{
+    width: calc(100vw - 40px);   /* chat gtp*/
+    margin-left: 20px;           /*chat gtp*/
+    margin-right: 20px;          /*chat gtp*/ /*This line doesn't change anything in the layout idk why*/
+    font-size: 15px;
+    color: rgb(78, 76, 76);
+}
+.brand-directories1 h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(78, 76, 76);
+}
+.footer{
+    height: 350px;
+    background: #1a1818;
+}
+.container{
+    height: 200px;
+    background: #1a1818;
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    padding-top: 50px;
+    font-size: 13px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+ul{
+    list-style: none;
+}
+.end{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 12px;
+    display:flex;
+    justify-content: space-around;
+}
+.credit-card{
+    height: 18px;
+    width: 400px;
+    background-image: url("card.jpg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
