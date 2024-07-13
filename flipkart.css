@@ -31,7 +31,6 @@ header{
     justify-content: space-evenly;
     margin: 0vh 3vw 10vh 3vw;
     z-index: 3;
-    pointer-events: none;
 }
 .search{
     display: flex;
