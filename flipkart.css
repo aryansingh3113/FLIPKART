@@ -5,6 +5,7 @@
 }
 body{
     background-color: rgb(221, 221, 221);
+    z-index: -3;
     
 }
 body::-webkit-scrollbar{       /*hides the scrollbar*/
@@ -29,6 +30,8 @@ header{
     display: flex;
     justify-content: space-evenly;
     margin: 0vh 3vw 10vh 3vw;
+    z-index: 3;
+    pointer-events: none;
 }
 .search{
     display: flex;
@@ -237,6 +240,8 @@ header{
     margin-left: 20px;
     display: flex;
     gap: 15px;
+    position: relative;
+    z-index:-1;
 }
 .items p{
     font-size: 20px;
@@ -396,6 +401,8 @@ header{
     margin-right: 20px;          /*chat gtp*/ /*This line doesn't change anything in the layout idk why*/
     display: flex;
     gap: 15px;
+    z-index: -2;
+    position: relative;
 }
 .items2 p{
     font-size: 20px;
